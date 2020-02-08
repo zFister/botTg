@@ -16,14 +16,33 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 
 $response = '';
-if(isset($message['text']) && $message['text'] == 'leccata' || $message ['text'] == 'Leccata' || $message ['text'] == 'LECCATA')
+
+if(isset($message['text'])
+&& $message['text'] == 'leccata'
+|| $message ['text'] == 'Leccata'
+|| $message ['text'] == 'LECCATA'
+|| $message ['text'] == 'leccata'
+|| $message ['text'] == 'Leccata'
+|| $message ['text'] == 'leccatina'
+|| $message ['text'] == 'Leccatina'
+|| $message ['text'] == 'lecchino'
+|| $message ['text'] == 'Lecchino'
+|| $message ['text'] == 'lecchina'
+|| $message ['text'] == 'Lecchina'
+|| $message ['text'] == 'LECCHINO'
+|| $message ['text'] == 'LECCHINA'
+|| $message ['text'] == 'LECCATINA'
+|| $message ['text'] == 'LEKKINO'
+|| $message ['text'] == 'Lekkino'
+|| $message ['text'] == 'lekkino')
 {
-	$response = "Hai leccato " .  $indice++ . " volte!";
+	$response = "Hai leccato " .  $n+1  . " volte!";
 }
 else
 {
-	$response = "Ho ricevuto un messaggio ?";
+$response = "rabocc muori diocane";
 }
+
 header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
