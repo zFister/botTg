@@ -39,17 +39,32 @@ if(isset($message['text'])
 || $message ['text'] == 'LECCATINA'
 || $message ['text'] == 'LEKKINO'
 || $message ['text'] == 'Lekkino'
+|| $message ['text'] == 'leccando'
+|| $message ['text'] == 'Leccando'
+|| $message ['text'] == 'leccare'
+|| $message ['text'] == 'LECCANDO'
+|| $message ['text'] == 'Leccare'
+|| $message ['text'] == 'LECCARE'
+|| $message ['text'] == 'lecco'
+|| $message ['text'] == 'Lecco'
+|| $message ['text'] == 'LECCO'
+|| $message ['text'] == 'Lecca'
+|| $message ['text'] == 'lecca'
+|| $message ['text'] == 'LECCA'
+|| $message ['text'] == 'Leccare'
+|| $message ['text'] == 'leccare'
+|| $message ['text'] == 'LECCARE'
 || $message ['text'] == 'lekkino')
 {
 
     $vars['n']++;
-	$response = "Hai leccato " . $vars['n'] . " volte!";
+	$response = "Hai leccato" . $vars['n'] . " volte!";
 	$json = json_encode($vars);
     file_put_contents('storage.json', $json);
 }
 else
 {
-
+$response = "rabocc muori diocane";
 }
 
 header("Content-Type: application/json");
