@@ -17,6 +17,7 @@ $date = isset($message['date']) ? $message['date'] : "";
 
 $response = '';
 $n = 0;
+$n++;
 if(isset($message['text'])
 && $message['text'] == 'leccata'
 || $message ['text'] == 'Leccata'
@@ -36,8 +37,7 @@ if(isset($message['text'])
 || $message ['text'] == 'Lekkino'
 || $message ['text'] == 'lekkino')
 {
-$response = "porcoddio basta leccare";
-	$response = $n + 1;
+	$response = "porcoddio basta leccare" . $n;
 }
 else
 {
