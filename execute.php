@@ -58,14 +58,20 @@ if(isset($message['text'])
 {
 
     $vars['n']++;
-	$response = "Hai leccato" . $vars['n'] . " volte!";
+	$response = "Hai leccato " . $vars['n'] . " volte!";
 	$json = json_encode($vars);
     file_put_contents('storage.json', $json);
 }
-else
+elseif(isset($message['text'] && $message['text'] == "chapo")
 {
-$response = "rabocc muori diocane";
+	$response = "Hai detto Stiven??";
 }
+
+elseif(isset($message['text'] && $message['text'] == "memavide")
+{
+	$response = "memavide lecchino memavide tumore";
+}
+
 
 header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $response);
