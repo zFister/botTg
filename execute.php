@@ -2,6 +2,7 @@
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 
+
 if(!$update)
 {
   exit;
@@ -37,7 +38,7 @@ if(isset($message['text'])
 || $message ['text'] == 'Lekkino'
 || $message ['text'] == 'lekkino')
 {
-	$response = "porcoddio basta leccare" . $n;
+	$response = "Hai leccato" . /*qua la variabile che ti conta quante volte   */ . " volte!";
 }
 else
 {
