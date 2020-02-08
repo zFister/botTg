@@ -16,17 +16,16 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 
 $response = '';
-$leccata = [];
-
+$array_leccato['indice'] = 0;
 if(isset($message['text']) && $message['text'] == 'leccata' || $message ['text'] == 'Leccata' || $message ['text'] == 'LECCATA')
 {
-	$response = "Hai leccato" . $message['text'] . "volte!";
+    $array_leccato['indice']++;
+	$response = "Hai leccato " . $array_leccato['indice'] . " volte!";
 }
 else
 {
-	$response = "Ho ricevuto un messaggio porcoddio ?";
+	$response = "Ho ricevuto un messaggio ?";
 }
-
 header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
