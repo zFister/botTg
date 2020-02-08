@@ -43,7 +43,7 @@ if(isset($message['text'])
 {
 
     $vars['n']++;
-	$response = "Hai leccato" . $vars['n'] . " volte!";
+	$response = "Hai leccato " . $vars['n'] . " volte!";
 	$json = json_encode($vars);
     file_put_contents('storage.json', $json);
 }
