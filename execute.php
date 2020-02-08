@@ -49,7 +49,7 @@ if(isset($message['text'])
 }
 else
 {
-$response = "rabocc muori diocane";
+
 }
 
 header("Content-Type: application/json");
