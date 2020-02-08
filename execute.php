@@ -59,36 +59,8 @@ if(isset($message['text'])
     file_put_contents('storage.json', $json);
 }
 
+else {
 
-// elseif(isset($message['text'] && $message['text'] == "chapo" ||
-// 	    			 $message['text'] == "Chapo" || 
-// 				 $message['text'] == "CHAPO" || )
-// {
-// 	$response = "Hai detto Stiven??";
-// }
-
-// elseif(isset($message['text'] && $message['text'] == "memavide" ||
-//        				 $message['text'] == "Memavide" ||
-//        				 $message['text'] == "MEMAVIDE")
-// {
-// 	$response = "memavide lecchino memavide tumore";
-// }
-else 
-{
-if(isset($message['text'] && $message['text'] == "chapo" ||
-	    			 $message['text'] == "Chapo" || 
-				 $message['text'] == "CHAPO" || )
-{
-	$response = "Hai detto Stiven??";
-}
-   else {
-	 if(isset($message['text'] && $message['text'] == "memavide" ||
-       				 $message['text'] == "Memavide" ||
-       				 $message['text'] == "MEMAVIDE")
-{
-	$response = "memavide lecchino memavide tumore";
-}
-}
 }
 
 
