@@ -16,7 +16,6 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 
 $response = '';
-$array_leccato['indice'] = 0;
 if(isset($message['text']) && $message['text'] == 'leccata' || $message ['text'] == 'Leccata' || $message ['text'] == 'LECCATA')
 {
     $array_leccato['indice'] = $array_leccato['indice'] + 1;
