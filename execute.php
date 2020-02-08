@@ -64,21 +64,22 @@ if(isset($message['text'])
 }
 
 
-elseif(isset($message['text'] && $message['text'] == "chapo" ||
-	    			 $message['text'] == "Chapo" || 
-				 $message['text'] == "CHAPO" || )
-{
-	$response = "Hai detto Stiven??";
-}
+// elseif(isset($message['text'] && $message['text'] == "chapo" ||
+// 	    			 $message['text'] == "Chapo" || 
+// 				 $message['text'] == "CHAPO" || )
+// {
+// 	$response = "Hai detto Stiven??";
+// }
 
-elseif(isset($message['text'] && $message['text'] == "memavide"
-       				 $message['text'] == "Memavide"
-       				 $message['text'] == "MEMAVIDE")
-{
-	$response = "memavide lecchino memavide tumore";
-}
+// elseif(isset($message['text'] && $message['text'] == "memavide"
+//        				 $message['text'] == "Memavide"
+//        				 $message['text'] == "MEMAVIDE")
+// {
+// 	$response = "memavide lecchino memavide tumore";
+// }
 else 
 {
+	$response = "ciao";
 }
 
 
