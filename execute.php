@@ -18,8 +18,8 @@ $date = isset($message['date']) ? $message['date'] : "";
 $response = '';
 if(isset($message['text']) && $message['text'] == 'leccata' || $message ['text'] == 'Leccata' || $message ['text'] == 'LECCATA')
 {
-    $array_leccato['indice'] = $array_leccato['indice']++ ;
-	$response = "Hai leccato " . $array_leccato['indice'] . " volte!";
+        $indice = $indice + 1;
+	$response = "Hai leccato " .  $indice . " volte!";
 }
 else
 {
