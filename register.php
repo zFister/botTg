@@ -1,8 +1,8 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = 'https:///memavide-bot.herokuapp.com/execute.php';
-$BOT_TOKEN = '1015906191:AAEF1EJCUVGcjX7fzjIQdGj_dkoPVzc8Yl8';
+$WEBHOOK_URL = '{https:///memavide-bot.herokuapp.com/execute.php}';
+$BOT_TOKEN = '{1015906191:AAEF1EJCUVGcjX7fzjIQdGj_dkoPVzc8Yl8}';
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
