@@ -7,7 +7,7 @@ if(!$update)
   exit;
 }
 
-$message = isset($update['leccata']) ? $update['leccata'] : "";
+$message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
 $chatId = isset($message['chat']['id']) ? $message['chat']['id'] : "";
 $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_name'] : "";
@@ -60,7 +60,7 @@ if(isset($message['leccata']))
 // }
 else
 {
-	$response = "Ho ricevuto un messaggio ?";
+	$response = "Ho ricevuto un messaggio porcodio ?";
 }
 
 header("Content-Type: application/json");
