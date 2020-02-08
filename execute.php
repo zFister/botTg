@@ -38,7 +38,7 @@ if(isset($message['text'])
 || $message ['text'] == 'Lekkino'
 || $message ['text'] == 'lekkino')
 {
-	$response = "Hai leccato" . /*qua la variabile che ti conta quante volte   */ . " volte!";
+	$response = "Hai leccato";
 }
 else
 {
