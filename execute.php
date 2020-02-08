@@ -2,6 +2,10 @@
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
 
+$vars = file_get_contents('storage.json');
+$vars = json_decode($vars, true);
+
+
 
 if(!$update)
 {
@@ -17,8 +21,7 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 
 $response = '';
-$n = 0;
-$n++;
+
 if(isset($message['text'])
 && $message['text'] == 'leccata'
 || $message ['text'] == 'Leccata'
@@ -38,7 +41,11 @@ if(isset($message['text'])
 || $message ['text'] == 'Lekkino'
 || $message ['text'] == 'lekkino')
 {
-	$response = "Hai leccato";
+
+    $vars['n']++;
+	$response = "Hai leccato" . $vars['n'] . " volte!";
+	$json = json_encode($vars);
+    file_put_contents('storage.json', $json);
 }
 else
 {
@@ -49,3 +56,5 @@ header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $response);
 $parameters["method"] = "sendMessage";
 echo json_encode($parameters);
+
+
