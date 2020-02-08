@@ -37,7 +37,7 @@ if(isset($message['text'])
 || $message ['text'] == 'lekkino')
 {
 $response = "porcoddio basta leccare";
-	$response = $n++;
+	$response = $n + 1;
 }
 else
 {
