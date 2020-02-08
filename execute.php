@@ -16,7 +16,7 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 
 $response = '';
-
+$n = 0;
 if(isset($message['text'])
 && $message['text'] == 'leccata'
 || $message ['text'] == 'Leccata'
@@ -36,7 +36,7 @@ if(isset($message['text'])
 || $message ['text'] == 'Lekkino'
 || $message ['text'] == 'lekkino')
 {
-	$response = "Hai leccato " .  $n+1  . " volte!";
+	$response = "Hai leccato " .$n++. " volte!";
 }
 else
 {
