@@ -77,6 +77,9 @@ elseif(isset($message['text'] && $message['text'] == "memavide"
 {
 	$response = "memavide lecchino memavide tumore";
 }
+else 
+{
+}
 
 
 header("Content-Type: application/json");
