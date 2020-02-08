@@ -26,23 +26,22 @@ if(isset($message['text'])
 && $message['text'] == 'leccata'
 || $message ['text'] == 'Leccata'
 || $message ['text'] == 'LECCATA'
-|| $message ['text'] == 'leccata'
-|| $message ['text'] == 'Leccata'
-|| $message ['text'] == 'leccatina'
-|| $message ['text'] == 'Leccatina'
 || $message ['text'] == 'lecchino'
 || $message ['text'] == 'Lecchino'
+|| $message ['text'] == 'LECCHINO'
 || $message ['text'] == 'lecchina'
 || $message ['text'] == 'Lecchina'
-|| $message ['text'] == 'LECCHINO'
 || $message ['text'] == 'LECCHINA'
-|| $message ['text'] == 'LECCATINA'
+|| $message ['text'] == 'lekkino'
 || $message ['text'] == 'LEKKINO'
 || $message ['text'] == 'Lekkino'
+|| $message ['text'] == 'lekkina'
+|| $message ['text'] == 'LEKKINA'
+|| $message ['text'] == 'Lekkina'
 || $message ['text'] == 'leccando'
 || $message ['text'] == 'Leccando'
-|| $message ['text'] == 'leccare'
 || $message ['text'] == 'LECCANDO'
+|| $message ['text'] == 'leccare'
 || $message ['text'] == 'Leccare'
 || $message ['text'] == 'LECCARE'
 || $message ['text'] == 'lecco'
@@ -51,10 +50,7 @@ if(isset($message['text'])
 || $message ['text'] == 'Lecca'
 || $message ['text'] == 'lecca'
 || $message ['text'] == 'LECCA'
-|| $message ['text'] == 'Leccare'
-|| $message ['text'] == 'leccare'
-|| $message ['text'] == 'LECCARE'
-|| $message ['text'] == 'lekkino')
+)
 {
 
     $vars['n']++;
@@ -64,22 +60,35 @@ if(isset($message['text'])
 }
 
 
-elseif(isset($message['text'] && $message['text'] == "chapo" ||
+// elseif(isset($message['text'] && $message['text'] == "chapo" ||
+// 	    			 $message['text'] == "Chapo" || 
+// 				 $message['text'] == "CHAPO" || )
+// {
+// 	$response = "Hai detto Stiven??";
+// }
+
+// elseif(isset($message['text'] && $message['text'] == "memavide" ||
+//        				 $message['text'] == "Memavide" ||
+//        				 $message['text'] == "MEMAVIDE")
+// {
+// 	$response = "memavide lecchino memavide tumore";
+// }
+else 
+{
+if(isset($message['text'] && $message['text'] == "chapo" ||
 	    			 $message['text'] == "Chapo" || 
 				 $message['text'] == "CHAPO" || )
 {
 	$response = "Hai detto Stiven??";
 }
-
-elseif(isset($message['text'] && $message['text'] == "memavide" ||
+   else {
+	 if(isset($message['text'] && $message['text'] == "memavide" ||
        				 $message['text'] == "Memavide" ||
        				 $message['text'] == "MEMAVIDE")
 {
 	$response = "memavide lecchino memavide tumore";
 }
-else 
-{
-	$response = "ciao";
+}
 }
 
 
